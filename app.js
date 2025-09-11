@@ -29,7 +29,7 @@ function verificarNumero() {
   let numero = parseFloat(prompt("Digite um número:"));
 
   if (isNaN(numero)) {
-    alert("Isso não é um número válido.");
+    alert("Isso não é uma entrada válida.");
   } else if (numero >= 0) {
     alert("O número é positivo.");
   } else {
