@@ -1,11 +1,26 @@
 // Desafio 1: Verifica o dia da semana
 function verificarDiaDaSemana() {
-  let dia = prompt("Qual é o dia da semana?");
+  const diasValidos = [ "segunda-feira", "terca-feira",
+    "quarta-feira", "quinta-feira", "sexta-feira",
+    "sabado", "domingo"
+  ];
 
-  if (dia === "sábado" || dia === "sabado" || dia === "domingo") {
+  let dia = prompt("Qual é o dia da semana?");
+  if (!dia) {
+    alert("Nenhum valor foi digitado.");
+    return;
+  }
+
+  dia = entrada.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+  if(diasValidos.includes(dia)) {
+    if ( dia === "sabado" || dia === "domingo") {
     alert("Bom fim de semana!");
-  } else {
+    } else {
     alert("Boa semana!");
+    }
+  }  else {
+    alert("Dia inválido, tente novamente.")
   }
 }
 
