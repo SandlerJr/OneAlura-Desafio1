@@ -21,3 +21,16 @@ function verificarNumero() {
     alert("O número é negativo.");
   }
 }
+
+// Desafio 3: Sistema de pontuação
+function verificarPontuacao() {
+  let pontuacao = parseInt(prompt("Digite sua pontuação:"));
+
+  if (isNaN(pontuacao)) {
+    alert("Pontuação inválida.");
+  } else if (pontuacao >= 100) {
+    alert("Parabéns, você venceu!");
+  } else {
+    alert("Tente novamente para ganhar.");
+  }
+}
