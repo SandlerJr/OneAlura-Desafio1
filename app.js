@@ -34,3 +34,14 @@ function verificarPontuacao() {
     alert("Tente novamente para ganhar.");
   }
 }
+
+// Desafio 4: Mensagem com saldo usando template string
+function mostrarSaldo() {
+  let saldo = parseFloat(prompt("Digite o valor do saldo:"));
+
+  if (isNaN(saldo)) {
+    alert("Valor inválido.");
+  } else {
+    alert(`Seu saldo atual é de R$ ${saldo.toFixed(2)}.`);
+  }
+}
