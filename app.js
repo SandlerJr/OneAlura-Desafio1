@@ -8,3 +8,16 @@ function verificarDiaDaSemana() {
     alert("Boa semana!");
   }
 }
+
+// Desafio 2: Verifica se o número é positivo ou negativo
+function verificarNumero() {
+  let numero = parseFloat(prompt("Digite um número:"));
+
+  if (isNaN(numero)) {
+    alert("Isso não é um número válido.");
+  } else if (numero >= 0) {
+    alert("O número é positivo.");
+  } else {
+    alert("O número é negativo.");
+  }
+}
