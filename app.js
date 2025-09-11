@@ -45,3 +45,14 @@ function mostrarSaldo() {
     alert(`Seu saldo atual é de R$ ${saldo.toFixed(2)}.`);
   }
 }
+
+// Desafio 5: Boas-vindas com nome do usuário
+function boasVindas() {
+  let nome = prompt("Digite seu nome:");
+
+  if (nome && nome.trim() !== "") {
+    alert(`Bem-vindo, ${nome.trim()}!`);
+  } else {
+    alert("Nome inválido.");
+  }
+}
